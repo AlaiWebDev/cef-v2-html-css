@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --dark-gray: #333333;
+    --purple: #8844cc;
+    --light-purple: rgba(136,68,204,0.1);
+    --light-blue: #b9ffd6;
+    --yellow: #fffa7c;
+    --aqua-blue: #08c3ff;
+    --light-gray: #f3f3f3;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: var(--dark-gray);
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    color: var(--yellow);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--light-gray);
+}
+
+header, main, footer {
+    width: 1200px;
+    background-color: var(--white);
+}
+
+h1 {
+    padding: 20px 0;
+    color: var(--purple);
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+footer a {
+    position: relative;
+    top: -40px;
+    left: 1100px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+footer a:hover {
+    color: var(--yellow);
+}

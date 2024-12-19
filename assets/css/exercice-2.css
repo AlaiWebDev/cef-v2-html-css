@@ -1,0 +1,90 @@
+@import url('./global.css');
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 1.9rem;
+    caption-side: bottom;
+}
+
+table th,
+table td {
+    border: 2px solid var(--dark-gray);
+    text-align: center;
+    padding: .6rem 0;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* PREMIER TABLEAU */
+.movements {
+    width: 75%;
+    margin-bottom: 6.2rem;
+}
+
+table:last-of-type {
+    width: 50%;
+}
+
+.movements tbody tr:nth-child(odd){
+    background-color: var(--light-gray);
+}
+
+.movements tbody tr:nth-child(even){
+    background-color: lightgray;
+}
+
+.movements thead, .movements tfoot {
+    background-color: grey;
+    font-weight: bold;
+}
+
+.movements caption {
+    background-color: var(--light-gray);
+}
+
+/* SECOND TABLEAU */
+
+.opening thead, .opening caption {
+    background-color: var(--yellow);
+}
+
+.opening caption {
+    padding: .3rem;
+    border: 2px solid var(--dark-gray);
+    border-top: 0;
+    font-style: italic;
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.opening tbody td:not(:first-child) {
+    color: var(--white)
+}
+
+.opened {
+    background-color: var(--aqua-blue);
+}
+
+.closed {
+    background-color: var(--purple);
+}
+
+.opening tbody tr:nth-child(odd) td:first-child {
+    background-color: lightgreen;
+}
+
+.opening tbody tr:nth-child(even) td:first-child {
+    background-color: var(--yellow);
+}

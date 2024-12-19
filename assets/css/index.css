@@ -1,0 +1,108 @@
+@import url('./global.css');
+
+/***** HEADER *****/
+/* NAV */
+nav {
+    background-color: var(--purple);
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 0 20px;
+    list-style-type: none;
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--white);  
+}
+
+/* TITLES */
+h1 {
+    padding: 20px 0;
+    color: var(--purple);
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+h2 {
+    color: var(--purple);
+}
+
+h3 {
+    color: var(--aqua-blue);
+    margin: 10px 0;
+}
+
+/* OTHERS */
+span {
+    line-height: 2;
+}
+
+/***** MAIN *****/
+main {
+    padding-bottom: 25px;
+}
+
+main section {
+    margin: 10px;
+    margin-top: 0;
+    padding: 20px;
+    border: 2px solid var(--purple);
+    border-radius: 5px;
+}
+
+main section a {
+    display: block;
+    width: fit-content;
+    background-color: var(--purple);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--white);
+}
+
+main ul {
+    list-style-position: inside;
+}
+
+main section li {
+    list-style-type: none;
+}
+
+main section li em {
+    font-style: normal;
+    font-weight: bold;
+    color: var(--aqua-blue);
+}
+
+main ul ul {
+    text-indent: 50px;
+}
+
+.arrow-bullet>li::before {
+    content: "\002BC8";
+    margin: 0 .5em;
+}
+
+.arrow-bullet ul li {
+    list-style-type: square;
+    text-decoration: underline;
+}
+
+mark {
+    background-color: var(--yellow);
+}
+
+/***** FOOTER *****/
+footer {
+    padding: 20px;
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
+}

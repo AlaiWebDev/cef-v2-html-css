@@ -1,0 +1,120 @@
+@import url('./global.css');
+
+main {
+    padding-bottom: 3.1rem;
+}
+
+form {
+    width: 59%;
+    margin: auto;
+    padding: 1.9rem;
+    border: 2px solid var(--purple);
+    box-shadow: 5px 5px 5px var(--purple);
+    border-radius: 5px;
+}
+
+form>div {
+    margin: 1.2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+span, label, sup {
+    color: var(--purple);
+}
+
+sup {
+    vertical-align:text-top;
+    line-height: 80%;
+    font-size: 110%;
+    font-weight: bolder;
+}
+
+fieldset {
+    margin: 1.2rem auto;
+    border: 2px solid var(--purple);
+    border-radius: 5px;
+    background-color: var(--light-purple);
+}
+
+fieldset legend {
+    margin-left: .9rem;
+    padding: 0 .9rem;
+    font-weight: bold;
+    color: var(--purple);
+}
+
+fieldset label, fieldset span{
+    display: flex;
+    justify-content: space-between;
+    margin: .3rem .6rem;
+}
+
+.radio-gender {
+    display: flex;
+    margin-left: 9px;
+}
+
+hr {
+    width: 60%;
+    margin: .9rem auto;
+    height: 2px;
+    border: none;
+    background-color: var(--purple);
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: .6rem;
+}
+
+.contact label, fieldset:last-of-type label {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: .6rem;
+}
+
+fieldset input:not(input[type="checkbox"], .contact label input, .contact label), fieldset select, textarea {
+    width: 70%;
+    padding: .6rem;
+    border-radius: 4px;
+}
+
+select {
+    background-color: var(--light-gray);
+}
+
+input[type="file"] {
+    border: 1px solid var(--purple);
+    color: var(--purple);
+}
+
+input[type="radio"] {
+    margin: 0 .6rem;
+    accent-color: var(--purple);
+}
+
+input[type="checkbox"] {
+    accent-color: var(--purple);
+}
+
+select option {
+    background-color: var(--light-purple);
+    color: var(--purple);
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: .6rem 1.5rem;
+    margin: 0 .6rem;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    color: var(--yellow);
+    cursor:pointer;
+}
